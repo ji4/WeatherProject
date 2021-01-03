@@ -1,2 +1,2 @@
 # WeatherProject
-A practice project for node.js.
+A practice project for api with node.js.
