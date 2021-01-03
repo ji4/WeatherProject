@@ -4,7 +4,10 @@ const https = require("https");
 const app = express();
 
 app.get("/", function(req, res){
-	const url = "https://api.openweathermap.org/data/2.5/weather?q=Taipei&appid=271a7678dfb0e78920be91de92904957&units=metric";
+	const query = "Taipei";
+	const apiKey = "271a7678dfb0e78920be91de92904957";
+	const unit = "metric";
+	const url = "https://api.openweathermap.org/data/2.5/weather?q=" + Taipei + "&appid=" + apiKey + "&units=" + unit;
 	https.get(url, function(response){
 //		console.log(response);
 		
